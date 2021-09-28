@@ -1,0 +1,43 @@
+html {
+  font-size: 125%;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  font-family: system-ui;
+}
+
+main {
+  margin: auto;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.form-row > * {
+  flex-grow: 1;
+  text-align: center;
+}
+
+label {
+  align-self: center;
+  width: 1rem;
+}
+
+input {
+  font: inherit;
+}
+
+.output {
+  margin-top: 2rem;
+  font-weight: 700;
+}

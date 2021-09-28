@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="form-row">
+          <label for="input-a">🅰️</label>
+          <input type="number" name="a" id="input-a" value="0" />
+          <button type="button" data-random-for-input="a">🎲</button>
+        </div>
+        <div class="form-row">
+          <label for="input-b">🅱️</label>
+          <input type="number" name="b" id="input-b" value="0" />
+          <button type="button" data-random-for-input="b">🎲</button>
+        </div>
+        <div class="form-row">
+          <button type="button" data-calculate="add">➕</button>
+          <button type="button" data-calculate="subtract">➖</button>
+          <button type="button" data-calculate="multiply">✖️</button>
+          <button type="button" data-calculate="divide">➗</button>
+        </div>
+      </form>
+      <div class="form-row output">
+        <span id="output-a">0<!-- value of A goes here --></span>
+        <span id="output-operator">+<!-- operator goes here --></span>
+        <span id="output-b">0<!-- Value of B goes here --></span>
+        <span class="equals">=</span>
+        <span id="output-result">0<!-- Value of B goes here --></span>
+      </div>
+    </main>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
